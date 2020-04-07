@@ -1,0 +1,65 @@
+{
+  "id": "api_test",
+  "tag": "autotest",
+  "desc": "api_test",
+  "requests": [
+    {
+      "url": "https://api.domainsdb.info/v1/info/api",
+      "code": 200,
+      "response": {
+        "success": "False",
+        "license": "invalid",
+        "item_id": "False",
+        "item_name": "Daily registered/dropped domains lists subscription",
+        "expires": null,
+        "customer_name": null,
+        "customer_email": null,
+        "license_limit": null,
+        "price_id": null
+      }
+    },
+    {
+      "url": "http://api.worldbank.org/v2/country/br?format=json",
+      "code": 200,
+      "response": [
+        {
+          "page": 1,
+          "pages": 1,
+          "per_page": "50",
+          "total": 1
+        },
+        [
+          {
+            "id": "BRA",
+            "iso2Code": "BR",
+            "name": "Brazil",
+            "region": {
+              "id": "LCN",
+              "iso2code": "ZJ",
+              "value": "Latin America & Caribbean "
+            },
+            "adminregion": {
+              "id": "LAC",
+              "iso2code": "XJ",
+              "value": "Latin America & Caribbean (excluding high income)"
+            },
+            "incomeLevel": {
+              "id": "UMC",
+              "iso2code": "XT",
+              "value": "Upper middle income"
+            },
+            "lendingType": {
+              "id": "IBD",
+              "iso2code": "XF",
+              "value": "IBRD"
+            },
+            "capitalCity": "Brasilia",
+            "longitude": "-47.9292",
+            "latitude": "-15.7801"
+          }
+        ]
+      ]
+    }
+  ]
+}
+

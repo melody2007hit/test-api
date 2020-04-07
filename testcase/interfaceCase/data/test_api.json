@@ -1,0 +1,28 @@
+{
+  "id": "api_test",
+  "tag": "autotest",
+  "desc": "api_test",
+  "requests": [
+    {
+      "url": "https://api.oceandrivers.com:443/v1.0/getWeatherDisplay/cnarenal/",
+      "param": {
+        "period": "latestday"
+      },
+      "code": 200,
+      "response": {
+        "ACTIVE": "ON"
+      }
+    },
+    {
+      "url": "https://api.oceandrivers.com:443/v1.0/getWeatherDisplay/cnarenal/",
+      "param": {
+        "period": "latestdata"
+      },
+      "code": 200,
+      "response": {
+        "ACTIVE": "ON"
+      }
+    }
+  ]
+}
+

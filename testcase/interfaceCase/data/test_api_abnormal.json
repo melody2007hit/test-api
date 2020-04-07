@@ -1,0 +1,38 @@
+{
+  "id": "api_abnoraml_test",
+  "tag": "autotest",
+  "desc": "api_abnormal_test",
+  "requests": [
+    {
+      "url": "https://api.oceandrivers.com:443/v1.0/getWeatherDisplay/cnarenal/",
+      "param": {
+        "period": ""
+      },
+      "code": 500,
+      "message": "Internal Server Error",
+      "response": {
+      }
+    },
+    {
+      "url": "https://api.oceandrivers.com:443/v1.0/getWeatherDisplay/cnarenal/",
+      "param": {
+        "period": "4"
+      },
+      "code": 500,
+      "message": "Internal Server Error",
+      "response": {
+      }
+    },
+    {
+      "url": "https://api.oceandrivers.com:443/v1.0/getWeatherDisplay/cnarenal/",
+      "param": {
+        "period": 0
+      },
+      "code": 500,
+      "message": "Internal Server Error",
+      "response": {
+      }
+    }
+  ]
+}
+
