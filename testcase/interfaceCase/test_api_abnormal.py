@@ -2,14 +2,14 @@
 # - *- encoding: utf- 8 - *-
 
 import pytest
-import json
 from util.httpUtil import httpUtil
 from util.jsonRead import jsonRead
-from HTMLTestRunner import HTMLTestRunner
+
 
 jsonR = jsonRead()
 data = jsonR.read("../interfaceCase/data/test_api_abnormal.json")
 
+  # param is empty string/wrong value/different type value
 @pytest.mark.parametrize("request", data["requests"])
 def test_api(request):
     http =httpUtil();

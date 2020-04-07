@@ -9,7 +9,6 @@
         "period": ""
       },
       "code": 500,
-      "message": "Internal Server Error",
       "response": {
       }
     },
@@ -19,7 +18,6 @@
         "period": "4"
       },
       "code": 500,
-      "message": "Internal Server Error",
       "response": {
       }
     },
@@ -29,7 +27,6 @@
         "period": 0
       },
       "code": 500,
-      "message": "Internal Server Error",
       "response": {
       }
     }

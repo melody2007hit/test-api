@@ -5,11 +5,11 @@ import pytest
 import json
 from util.httpUtil import httpUtil
 from util.jsonRead import jsonRead
-from HTMLTestRunner import HTMLTestRunner
 
 jsonR = jsonRead()
 data = jsonR.read("../interfaceCase/data/test_api.json")
 
+# api contain params
 @pytest.mark.parametrize("request", data["requests"])
 def test_api(request):
     http =httpUtil();
